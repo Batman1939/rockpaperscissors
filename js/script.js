@@ -17,12 +17,14 @@ $("shoot").click(function(){
     $("#input").text($("#userChoice").val());
     var randomNumber = Math.random(); 
     if (randomNumber >= 2/3)  {
-        $("computerChoice").text("Rock");
+        $("computerChoice").html("Rock");
     }
     else if (randomNumber <= 2/3 && randomNumber >= 1/3) {
-        $("comuterChoice").text("Paper");
+        $("comuterChoice").html("Paper");
     }
     else if (randomNumber <= 1/3 && randomNumber >= 0) {
-        $("computerChoice").text("scissors");
+        $("computerChoice").html("scissors");
     }
+    if(userChoice = "rock" && comuterChoice = "rock" ||
+    userChoice = "")
 });
